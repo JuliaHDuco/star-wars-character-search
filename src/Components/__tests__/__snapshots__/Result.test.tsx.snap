@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Result with buttons 1`] = `
+<li>
+  <button
+    onClick={[Function]}
+  >
+    Luke Skywalker
+  </button>
+</li>
+`;
