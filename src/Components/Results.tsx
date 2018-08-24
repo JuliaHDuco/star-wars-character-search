@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { IPerson } from '../types';
 import Result from './Result';
+import './styling/Results.scss'
 
 interface IResultProps {
   results: IPerson[];

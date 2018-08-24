@@ -1,0 +1,26 @@
+@mixin pseudo($pos, $content) {
+  content: $content;
+  position: $pos;
+}
+
+@mixin cross($color, $size, $stroke-width, $position) {
+  width: $size;
+  height: $size;
+  position: $position;
+  &:after,
+  &:before {
+    @include pseudo(absolute, '');
+    display: block;
+    top: 0;
+    left: 50%;
+    width: $stroke-width;
+    height: 100%;
+    background: $color;
+  }
+  &:after {
+    transform: translateX(-50%) rotate(45deg);
+  }
+  &:before {
+    transform: translateX(-50%) rotate(-45deg);
+  }
+}

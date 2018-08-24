@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot 1`] = `
+<ul>
+  <li>
+    <button
+      onClick={[Function]}
+    >
+      Luke Skywalker
+    </button>
+  </li>
+  <li>
+    <button
+      onClick={[Function]}
+    >
+      Owen Lars
+    </button>
+  </li>
+</ul>
+`;

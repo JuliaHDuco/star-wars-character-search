@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { IPerson, IEvent } from '../types';
 import Results from './Results';
+import './styling/FuzzySearchInput.scss'
 
 interface IFuzzySearchInputProps {
   className?: string;
@@ -33,8 +34,11 @@ class FuzzySearchInput extends React.Component<IFuzzySearchInputProps, IStatePro
   public render() {
     const results = this.state.results;
     return (
-      <div>
-        <input type='text' value={this.state.searchString} onChange={this.handleOnChange}/>
+      <div className='fuzzy-search-input'>
+        <input
+          type='text'
+          value={this.state.searchString} onChange={this.handleOnChange}
+          placeholder='Search for any Star Wars character'/>
         {results && this.state.searchString.length > 0 ? <Results results={results} /> : null}
       </div>
     );

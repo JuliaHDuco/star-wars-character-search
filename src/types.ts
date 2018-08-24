@@ -8,8 +8,6 @@ export interface IPerson {
 	birth_year: string;
 	gender: string;
 	homeworld: string;
-	films: string[];
-	species: string[];
 }
 
 export interface IEvent {

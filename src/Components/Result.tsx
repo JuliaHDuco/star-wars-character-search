@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { IPerson, } from '../types';
 import Person from './Person';
+import './styling/Result.scss';
 
 interface IResultProps {
   content: IPerson
